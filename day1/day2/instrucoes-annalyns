@@ -1,0 +1,53 @@
+Instruções
+Neste exercício, você estará implementando a lógica de busca para um novo jogo de RPG que um amigo 
+está desenvolvendo. O principal jogo personagem é Annalyn, uma garota corajosa com um cão de estimação
+feroz e leal. Infelizmente, o desastre acontece, como seu melhor amigo foi sequestrado enquanto 
+procurava por bagas na floresta. Annalyn tentará encontrar e libertar sua melhor amiga, 
+opcionalmente levando seu cachorro com ela nesta busca.
+
+Depois de algum tempo seguindo a trilha de sua melhor amiga, ela encontra o campo em que sua melhor 
+amiga está presa. Ela Acontece que há dois sequestradores: um poderoso cavaleiro e um arqueiro astuto.
+
+Tendo encontrado os sequestradores, Annalyn considera em qual das seguintes ações ela pode se 
+envolver:
+
+#Ataque rápido: um ataque rápido pode ser feito se o cavaleiro estiver dormindo, pois leva tempo para 
+ele colocar sua armadura, então ele será vulnerável;
+
+#Espião: o grupo pode ser espionado se pelo menos um deles estiver acordado. Caso contrário, a 
+espionagem é uma perda de tempo.
+
+#Prisioneiro de sinal: o prisioneiro pode ser sinalizado usando sons de pássaros se o prisioneiro 
+estiver acordado e o arqueiro estiver dormindo, pois os arqueiros são treinados na sinalização de 
+pássaros, para que possam interceptar a mensagem.
+
+#Prisioneiro livre: Annalyn pode tentar entrar sorrateiramente no campo para libertar o prisioneiro.
+
+Esta é uma coisa arriscada de se fazer e pode só tenha sucesso de duas maneiras:
+--> Se Annalyn tem seu cão de estimação com ela, ela pode resgatar o prisioneiro se o arqueiro estiver dormindo. O cavaleiro tem medo de o cão e o arqueiro não terão tempo de se preparar antes 
+que Annalyn e o prisioneiro possam escapar.
+--> Se Annalyn não tem seu cachorro, então ela e o prisioneiro devem ser muito sorrateiros! 
+Annalyn pode libertar o prisioneiro se o prisioneiro está acordado e o cavaleiro e o arqueiro estão dormindo, mas se o prisioneiro está dormindo, eles não podem ser resgatado: o prisioneiro ficaria assustado com a súbita aparição de Analyn e acordaria o cavaleiro e o arqueiro.
+
+Você tem quatro tarefas: implementar a lógica para determinar se as ações acima estão disponíveis com base no estado do três personagens encontrados na floresta e se o cão de estimação de Annalyn está presente ou não.
+
+## Tarefa 1 
+Verifique se um ataque rápido pode ser feito
+
+Implemente o método (estático) que usa um valor booleano que indica se o cavaleiro está acordado. Este método retorna se um ataque rápido pode ser feito com base no estado do cavaleiro. Caso contrário Retorna:AnnalynsInfiltration.canFastAttack()truefalse
+
+## Tarefa 2
+Verifique se o grupo pode ser espionado
+
+Implemente o método (estático) que usa três valores booleanos, indicando se o cavaleiro, arqueiro e prisioneiro, respectivamente, estão acordados. O método retorna se o grupo puder ser espionado, com base no estado dos três caracteres. Caso contrário, retorna:AnnalynsInfiltration.canSpy()truefalse
+
+## Tarefa 3
+Verifique se o prisioneiro pode ser sinalizado
+
+Implemente o método (estático) que usa dois valores booleanos, indicando se o arqueiro e o prisioneiro, respectivamente, estão acordados. O método retorna se o prisioneiro puder ser sinalizado, com base sobre o estado dos dois caracteres. Caso contrário, retorna: AnnalynsInfiltration.canSignalPrisoner()truefalse
+
+## Tarefa 4
+Verifique se o prisioneiro pode ser libertado
+
+Implemente o método (estático) que usa quatro valores booleanos. Os três primeiros parâmetros indicam se o cavaleiro, arqueiro e o prisioneiro, respectivamente, estão acordados. O último parâmetro indica se O cão de estimação de Annalyn está presente. O método retorna se o prisioneiro puder ser libertado com base no estado dos três. personagens e a presença de cachorro de estimação de Annalyn. 
+Caso contrário, ele retornará :AnnalynsInfiltration.canFreePrisoner()truefalse
